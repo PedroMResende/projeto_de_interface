@@ -1,0 +1,137 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+html { 
+    background-color: rgb(207, 253, 238);
+}
+
+.img_foto1 { 
+    height: 700px;
+    width: 925px;
+
+}
+
+.img_foto2 { 
+    height: 840px;
+    width: 925px;
+
+}
+
+
+
+section { 
+    display: flex;
+    padding: 1rem;
+    position: relative;
+
+}
+
+.texto_foto{ 
+    width: 500px;
+    height: auto;
+    padding-left: 15px ; 
+    text-align: justify;
+    background-color: aquamarine;
+    border-radius: 5%;
+
+}
+
+.fotos_restantes  { 
+    width: 465px;
+    height: auto;
+}
+
+h2 { 
+    width: 1200px;
+    height: 40px;
+    position: absolute;
+    top: 50%; 
+    left:40%;
+    z-index: 1;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    color: antiquewhite;
+}
+
+h2 span { 
+    opacity: 0;
+    display: inline-block;
+    transform: translateX(-400px);
+    animation: slideIn 0.6s ease forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100px); /* Começa da esquerda a 100px */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); /* Move para o centro */
+        opacity: 1;
+    }
+}
+
+    
+    /* Efeito para movimentar */
+    .main-banner_div span:nth-child(1) { animation-delay: 0.6s; }
+    .main-banner_div span:nth-child(2) { animation-delay: 0.8s; }
+    .main-banner_div span:nth-child(3) { animation-delay: 1.0s; }
+    .main-banner_div span:nth-child(4) { animation-delay: 1.2s; }
+
+    /* TABELAS */
+
+    body {
+        line-height: 1.6;
+        padding: 20px;
+        background-color: #f0f0f0;
+    }
+    
+    table {
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    /* Variação 1 - Básica */
+    .tabela-basica th, .tabela-basica td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    .tabela-basica th {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    /* Variação 2 - Zebra */
+    .tabela-zebra th, .tabela-zebra td {
+        padding: 10px;
+    }
+    .tabela-zebra th {
+        background-color: #6a0dad;
+        color: white;
+    }
+    .tabela-zebra tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    /* Variação 3 - Borda arredondada */
+    .tabela-arredondada th, .tabela-arredondada td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+    .tabela-arredondada th {
+        background-color: #ff6347;
+        color: white;
+    }
+    .tabela-arredondada {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .container_pag3 { 
+        display: flex;
+    }
+
+
