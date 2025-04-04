@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formularios">
+        <fieldset> 
+            <form action="#" method="POST">
+            
+
+                <legend> <h1> DADOS PESSOAIS  </h1> </legend>
+                <label for="nome"> Nome completo: </label>
+                <input type="text" id="nome" name="nome" required> <br> <br> 
+    
+                <label for="email"> E-mail: </label>
+                <input type="text" name="email" id="email" required> <br> <br>
+    
+                <label for="telefone"> Telefone: </label>
+                <input type="text" name="telefone" id="telefone" required> <br> <br>
+    
+                <label for="data_nascimento"> Data de nascimento: </label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required> <br> <br> 
+    
+    
+            </form>
+        </fieldset>
+            <br>
+        <fieldset> 
+            <form action="#" method="POST">
+
+                <legend> <h1> Escolha do evento </h1> </legend>
+                <h2> Tipo de evento </h2>
+                <!-- option+shift+baixo copia -->
+                <label><input type="radio" name="tipo_evento" value="workshop" required>WORKSHOP</label><br>  
+                <label><input type="radio" name="tipo_evento" value="palestra">PALESTRA</label><br>
+                <label><input type="radio" name="tipo_evento" value="hackathon">HACKATHON</label><br>
+                <label><input type="radio" name="tipo_evento" value="feira">FEIRA</label><br><br>
+
+                <h2> Temas de interesse  <br> (selecione pelo menos um) </h2>
+
+                <label><input type="checkbox" name="interesse" value="tecnologia" required>TECNOLOGIA</label><br>
+                <label><input type="checkbox" name="interesse" value="saude">SAÚDE</label><br>
+                <label><input type="checkbox" name="interesse" value="educação">EDUCAÇÃO</label><br>
+                <label><input type="checkbox" name="interesse" value="meio ambiente">MEIO AMBIENTE</label><br>
+                <label><input type="checkbox" name="interesse" value="arte">ARTE</label><br><br>
+            </form>
+        </fieldset>
+        <br>
+
+        <fieldset> 
+            <form action="#" method="POST">
+
+                <legend><h1> PreferÊncias e necessidades </h1></legend>
+
+                <label for="alimentacao">AlimentaÇÃo: </label>
+                <select name="alimentacao" id="alimentacao" required>
+                    <option value=""> Selecione </option>
+                    <option value="Vegetariano"> Vegetariano</option>
+                    <option value="Vegano"> Vegano</option>
+                    <option value="Comum"> Comum </option>
+                    <option value="Sem restrição"> Sem restrição </option>
+                </select><br><br>
+
+                <h2> Necessidades de acessibilidade </h2>
+                <label><input type="checkbox" name="acessibiidade" value="Rampas de acesso"> Rampas de acesso </label>
+                <label><input type="checkbox" name="acessibiidade" value="libras"> Intérprete de libras </label>
+                <label><input type="checkbox" name="acessibiidade" value="braille"> Material em braille </label><br><br>
+
+                <h2> Camiseta do evento </h2>
+                <label><input type="radio" name="camiseta" id="camiseta" value="P">P</label>
+                <label><input type="radio" name="camiseta" id="camiseta" value="M">M</label>
+                <label><input type="radio" name="camiseta" id="camiseta" value="G">G</label>
+                <label><input type="radio" name="camiseta" id="camiseta" value="GG">GG</label>
+            </form>
+        </fieldset>
+        <br><br>
+        
+        <fieldset>
+            <legend><h2>Informações Adicionais </h2></legend>
+            
+            <label for="comentarios">Comentários ou Sugestões:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="10" cols="60"></textarea><br><br>
+
+            <label><input type="checkbox" name="termos" required> Eu aceito os termos e condições</label><br><br>
+        </fieldset>
+        <br>
+
+        <!-- Botões -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Resetar</button>
+    </form>
+
+
+     </div>
+    
+</body>
+
+</html>
