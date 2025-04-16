@@ -1,0 +1,182 @@
+@import url(/css/estilo_global.css);
+
+* { 
+    scroll-behavior: smooth;
+}
+body { 
+    background-color:#fafafa;
+    ;
+}
+/* NAV BAR */
+nav { 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 999; 
+    font-family: "Special Gothic Condensed One", sans-serif;
+    font-size:16px;
+}
+
+
+
+.logo-nav { 
+    background-image:url(/icons/tour_de_france_PNG4.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+}
+
+
+.navbar-container { 
+    width: 100%;
+    height: 80px;
+    background-color: rgb(23, 22, 22);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    z-index: 99;
+    position: fixed;
+}
+
+.navbar-items { 
+    list-style: none; 
+    display: flex;
+    gap: 20px;
+    padding: 0;    
+    margin: 0 auto;
+} 
+
+.navbar-items a { 
+    text-decoration: none;
+    color: #fafafa;
+    position: relative;
+}
+
+.navbar-items a:hover{ 
+    background-color: rgb(199, 209, 7);
+
+}
+
+/* TITULO */
+
+.titulo-etapas{ 
+    padding-top: 80px;
+    display: flex;
+    background-color: #fafafa;
+    width: 100%;
+    min-height: 450px;
+}
+
+.titulo-etapas-div { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 250px;
+    background-image: url(/img/etapa-certa.jpg);}
+
+.titulo-etapas-div h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Special Gothic Condensed One", sans-serif;
+    height: 50%;
+    color: #fafafa;
+    text-shadow: 2px 2px black;
+}
+
+.etapas-items-div { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:10px; 
+    padding: 2rem;
+    background-color: #fafafa;
+}
+
+.etapa { 
+    background-color:rgb(10, 10, 10); 
+    font-size: 16px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    transition: transform 0.4s ;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.etapa:hover { 
+    transform: scale(1.1);
+    box-shadow: 1px 2px black;
+    font-weight: bold;
+    background-color: #f4de18;
+    color: black;
+}
+
+.etapa a { 
+    text-decoration: none;
+    color: #fafafa;
+    font-family: "Special Gothic Condensed One", sans-serif;
+    justify-content: center;
+
+}
+
+/* rodapé */
+
+.footer {
+    background-color: #000000;
+    color: #f0c808;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    border-top: 4px solid #f0c808;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section {
+    flex: 1 1 250px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-family: font-offline;
+  }
+  
+  .footer-section p, .footer-section a {
+    font-size: 0.9rem;
+    color: #f0c808;
+    text-decoration: none;
+    font-family: font-offline;
+    
+  }
+  
+  .footer-icons a {
+    color: #f0c808;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: 0.3s;
+    font-family: font-offline;
+  }
+  
+  .footer-icons a:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+    font-family: font-offline;
+  }
+  
+  .footer-bottom {
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+
+

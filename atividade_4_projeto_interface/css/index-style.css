@@ -1,0 +1,416 @@
+@import url(/css/estilo_global.css);
+
+* { 
+    scroll-behavior: smooth;
+}
+body { 
+    background-color: rgb(0, 0, 0);
+    ;
+}
+/* NAV BAR */
+nav { 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 999; 
+    font-family: "Special Gothic Condensed One", sans-serif;
+    font-size:16px;
+}
+
+a {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.logo-nav { 
+    background-image:url(/icons/tour_de_france_PNG4.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+}
+
+
+.navbar-container { 
+    width: 100%;
+    height: 80px;
+    background-color: rgb(23, 22, 22);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    z-index: 99;
+    position: fixed;
+}
+
+.navbar-items { 
+    list-style: none; 
+    display: flex;
+    gap: 20px;
+    padding: 0;    
+    margin: 0 auto;
+} 
+
+.navbar-items a { 
+    text-decoration: none;
+    color: #fafafa;
+    position: relative;
+}
+
+.navbar-items a:hover{ 
+    background-color: rgb(199, 209, 7);
+
+}
+
+
+
+/* BODY */
+
+/* BANNER  */
+
+.main-banner { 
+    background-image: url(/img/e42d706612f22dffb52a8c9278101a44.jpg);
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    padding: 15rem 0;
+
+}
+
+.banner h1, 
+.banner p { 
+    font-family: "Bangers", system-ui; 
+    color: yellow;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px black;
+}
+
+.banner h1 { 
+    margin-bottom: 10px; 
+    font-size: 80px;
+    text-align: center;
+    align-items: center;
+}
+
+.banner h1 span, .banner p span { 
+    opacity: 0;
+    display: inline-block;
+    transform: translateX(-400px);
+    animation: slideIn 4s ease forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(300px); /* Começa da esquerda a 100px */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);  /* Move para o centro */
+        opacity: 1;
+    }
+}
+
+.banner p { 
+    margin-top: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.imagem-main-div{ 
+    width: 1440px;
+    height: 740px;
+
+}
+.imagem_capa { 
+    width: 100%;
+    height: auto;
+    margin: 0 auto 0;
+}
+
+/* HISTORIA */
+
+.historia { 
+    display: flex; 
+    background-color: #f8fd00;
+    border-radius: 20px;
+    margin: 4rem auto;
+    max-width: 1200px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px #fafafa;
+
+
+
+
+}
+
+.img-historia { 
+    background-image: url(/img/img_historia.jpg);
+    background-size: cover;    
+    background-position: center;
+    width: 40%;
+    min-height: 660px;
+}
+
+.historia-conteudo { 
+    padding: 2rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.historia-conteudo h2 { 
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 1.5rem;
+    font-family: "Bangers", system-ui; /* Fonte estilosa pro título */
+
+}
+
+.historia-conteudo p { 
+    font-size: 16px ; 
+    line-height: 1.6;
+    color: #444 ; 
+    font-family: "Special Gothic Condensed One", sans-serif;
+    font-weight: bold;
+    text-align: justify;
+
+
+}
+
+/* ETAPAS */
+
+.etapas { 
+    display: flex;
+    border-radius: 20px yellow;
+    margin: 4rem auto;
+    max-width: 1400px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px #f2ff00;
+    position: relative;
+}
+
+.img-etapas1  { 
+    background-image: url(/img/etapas_capa.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 33.33%;
+    min-height: 500px;    
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-etapas2  { 
+    background-image: url(/img/etapas_2_capa.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 33.33%;
+    min-height: 500px;    
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-etapas3  { 
+    background-image: url(/img/etapas_capa3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 33.33%;
+    min-height: 500px;    
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.etapas h2 { 
+    width: 1400px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px yellow;
+    font-family: "Rubik Distressed", system-ui;
+    opacity: 0;
+    animation: chamada 4s ease infinite ;
+}
+
+.etapas h3 { 
+    width: 1400px;
+    height: 40px;
+    position: absolute;
+    top: 70%;
+    left: 24.5%;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px yellow;
+    font-family: "Rubik Distressed", system-ui;
+    opacity: 0;
+    animation: chamada2 4s ease infinite;
+
+}
+
+@keyframes chamada {
+    0% {
+        transform: translateX(-400px); /* Começa da esquerda a 100px */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);  /* Move para o centro */
+        opacity: 1;
+    }
+}
+
+@keyframes chamada2 {
+    0% { 
+        transform: translateX(1000px);
+        opacity: 0;
+
+    }
+
+    100% { 
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}
+
+/* MAIORES VENCEDORES */
+
+.vencedores { 
+    display: flex; 
+    background-color: #f8fd00;
+    border-radius: 20px;
+    margin: 4rem auto;
+    max-width: 1000px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px #fafafa;
+}
+
+.img-vencedores { 
+    background-image: url(/img/pogacar.jpg);
+    background-size: cover;    
+    background-position: center;
+    width: 40%;
+    min-height: 660px;
+}
+
+.historia-vencedores { 
+    padding: 2rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.historia-vencedores h2 { 
+    font-family: "Bangers", system-ui; /* Fonte estilosa pro título */
+    font-size: 40px;
+    border-radius: 2px #ffffff;
+    z-index: 1;
+    text-align: justify;
+}
+
+/* rodapé */
+
+.footer {
+    background-color: #000000;
+    color: #f0c808;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    border-top: 4px solid #f0c808;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section {
+    flex: 1 1 250px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-family: font-offline;
+  }
+  
+  .footer-section p, .footer-section a {
+    font-size: 0.9rem;
+    color: #f0c808;
+    text-decoration: none;
+    font-family: font-offline;
+    
+  }
+  
+  .footer-icons a {
+    color: #f0c808;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: 0.3s;
+    font-family: font-offline;
+  }
+  
+  .footer-icons a:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+    font-family: font-offline;
+  }
+  
+  .footer-bottom {
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+
+    /* background-size: cover;
+    background-position: center;
+    width: 50%;
+    min-height: 660px;    
+    overflow: hidden; */
+
+
+
+
+/* FOOTER */
+
+/* .main-footer { 
+    align-items: flex-end;
+}
+
+.main-footer-div { 
+    background-color: rgb(207, 233, 219);
+    z-index: 999; 
+    width: 100%;
+    display: flex;
+    height: 80px;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+
+} */
+
+
+/* .main-banner_div span { 
+    opacity: 0;
+    display: inline-block;
+    transform: translateX(-400px);
+    animation: slideIn 0.6s ease forwards;
+     }
+
+
+    
+    .main-banner_div span:nth-child(1) { animation-delay: 0.6s; }
+    .main-banner_div span:nth-child(2) { animation-delay: 0.8s; }
+    .main-banner_div span:nth-child(3) { animation-delay: 1.0s; }
+    .main-banner_div span:nth-child(4) { animation-delay: 1.2s; } */
+
+    /* background-size: cover;
+    background-position: center;
+    width: 50%;
+    min-height: 660px;    
+    overflow: hidden; */

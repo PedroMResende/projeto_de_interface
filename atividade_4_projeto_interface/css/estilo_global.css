@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Bangers&display=swap) ; 
+@import url(https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap); /*font-family: "Rubik Distressed", system-ui;*/
+@import url(https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap); /*font-family: "Libre Caslon Text", serif; */ 
+@import url(https://fonts.googleapis.com/css2?family=Paprika&display=swap) ; /*font-family: "Paprika", system-ui*/
+
+@font-face {
+    font-family: "font-offline";
+    src: url(/fontes/Roboto-VariableFont_wdth\,wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+  }
+    
+    * { 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
